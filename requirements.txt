@@ -1,0 +1,15 @@
+1. set figure sizes explicitly to 4x3 or 7x3 for double columns
+2. set font to serif
+
+3. Axis Labels vs. Tick Labels: Use larger font sizes for axis labels and smaller sizes for tick labels.
+plt.rc('xtick', labelsize='x-small')
+plt.rc('ytick', labelsize='x-small')
+
+4. Use color judiciously, and only when necessary.
+
+5. high quality output format: .pdf, .eps, .svg
+
+6. use the consistent theme for all figures in paper
+plt.style.use('style.mplstyle')
+ 
+7. Include the standard error of the mean (SEM) in the figure, if possible.
