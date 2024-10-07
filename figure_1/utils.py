@@ -26,9 +26,25 @@ statements = {
 }
 
 
+'''
+We should develop more powerful and more general systems as fast as possible    18.867925
+We should never build AGI                                                        5.660377
+
+
+'''
+
+timelines_positions = {
+    "Eventually, but not soon.": "Eventually",
+    "Soon, but not as fast as possible": "Soon",
+    "We should develop more powerful and more general systems as fast as possible": "ASAP",
+    "We should never build AGI": "Never"
+}
+
+
 
 def fix_data(df, drop_zeros=True):
     if drop_zeros:
         df = df[df["number"] != 0]
     df["Q1"] = df["Q1"].replace(groups)
+    
     return df
